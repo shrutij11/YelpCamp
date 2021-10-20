@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href="/stylesheets/home.css">
+</head>
+<body>
+
+     <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">YelpCamp</h2>
+      <div class="toggle"></div>
+    </header>
+    
+
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop To </h2> 
+      <h3>Exploring The World</h3>
+      <p>Welcome to YelpCamp! <br> Jump right in and explore our many campgrounds. <br>
+        Feel free to share some of your own and comment on others!
+      </p>
+      <a href="/campgrounds">Explore</a>
+    </div>
+   
+  </section>
+  <div class="menu">
+    <ul>
+       <li> <a   href="#">Home</a></li>
+       <li> <a  href="/campgrounds">Campgrounds</a></li>
+        <% if(!currentUser) { %>
+       <li> <a  href="/login">Login</a></li>
+        <li><a  href="/register">Register</a></li>
+        <% } else { %>
+       <li> <a  href="/logout">Logout</a></li>
+        <% } %>
+    </ul>
+  </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
+    </script>
+</body>
+</html>
+
+
