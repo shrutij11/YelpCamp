@@ -1,5 +1,5 @@
 # YelpCamp
-> A Node.js web application from Colt Steele's Yelp Camp project. YelpCamp is a web Application in which users can add and find campgrounds and review them. It also has a clustered map where location of campgrounds are displayed. This website is seured using helmet.
+> A Node.js web application from Colt Steele's Yelp Camp project. YelpCamp is a web Application in which users can add and find campgrounds and review them. It also has a clustered map where location of campgrounds are displayed. This website is secured using helmet.
 
 ## Live Demo
 
